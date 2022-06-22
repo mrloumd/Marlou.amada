@@ -4,7 +4,7 @@ const StyledForm = styled.div`
   margin: auto;
   margin-top: 10rem;
   background-color: white;
-  width: 65%;
+  width: 68%;
 
   .formContainer {
     flex-wrap: wrap;
@@ -17,6 +17,20 @@ const StyledForm = styled.div`
     text-align: center;
   }
 
+  .card-border::after {
+    content: "";
+    position: absolute;
+
+    border-width: 3.7em;
+    border-left: 2rem;
+    border-style: solid;
+    border-left-color: #7fb864;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    transform: translate(174%, -100%);
+  }
+
   .header {
     color: white;
     background-color: #7fb864;
@@ -24,20 +38,17 @@ const StyledForm = styled.div`
     padding: 1rem;
   }
 
+  h4 {
+    margin: auto;
+  }
+
   .container {
-    padding: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
-    width: 100%;
   }
 
-  .col-auto {
-    width: 30%;
-  }
-
-  h4 {
-    text-align: center;
+  .input-card {
   }
 
   button {
